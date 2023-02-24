@@ -68,7 +68,7 @@ def get_single_stock_level(
         prob.solve(solver=cp.GLPK_MI, verbose=False)
         # return stock_level.value
         return stock_level.value
-
+# 123123123
 def get_stock_level(env: gym.Wrapper):
     stock_levels = np.zeros((len(env.get_warehouse_list()), len(env.get_sku_list())))
     for warehouse_index, warehouse in enumerate(env.get_warehouse_list()):
